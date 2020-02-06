@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Présentation Saona | Contact</title>
+		<link rel="stylesheet" href="style.css"/>
+		<link rel="icon" type="image/jpg" href="images/logo.jpg"/>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+        	    <header>
+					<div id="logo">
+						<a href="index.html">
+							<img src="images/KK.jpg" alt="Logo">
+						</a>
+					</div>
+				
+					<nav>
+						<ul>
+							<li class="active"><a href="index.html" title="Retourner sur la page d'accueil">Accueil</a></li>
+							<li><a href="CV.html" title="Aller voir le CV">Mon parcours</a></li>
+							<li><a href="contact.html" title="Contactez-moi!">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+			
+        	    <div id="banniere_image">
+    			</div>
+			<form>
+				<fieldset>
+					<legend>
+						<span class="number">1</span> Votre identité
+					</legend>
+
+					<label>Civilité </label>
+					<div id="civilite">
+						<input type="radio" name="civilité" value="monsieur"> Monsieur
+						<input type="radio" name="civilité" value="madame"> Madame 
+						<input type="radio" name="civilité" value="mademoiselle"> Mademoiselle
+					</div><br>
+
+					<div id="nomprenom">
+						<input type="text" name="nom" placeholder="Nom">
+						<input id="prenom" type="text" name="prenom" placeholder="Prénom">
+					</div>
+
+					<input id="email" type="email" name="email" placeholder="Email">
+
+					<label>Localité</label>
+					<input type="text" name="loc" size="30" maxlenght="30" placeholder="Saisir votre Adresse"> 
+					<input id="zipcode" type="text" name="no_post" size="4" maxlenght="4" placeholder="Code postal">
+
+
+					<label>Pays</label>
+
+					<select id="pays" name="pays">
+						<optgroup label="Europe">
+    		          		<option value="Italie">Italie</option>
+    		         	    <option value="Espagne">Espagne</option>
+    		           	    <option value="Angleterre">Angleterre</option>
+    		           	    <option selected="selected" value="France">France</option>
+    		           	    <option value="Allemagne">Allemagne</option>
+    		       		</optgroup>
+
+    		      		<optgroup label="Amérique du Nord">
+    		      			<option value="Etats-Unis">Etats-Unis</option>
+    		          		<option value="Canada">Canada</option>
+    		          		<option value="Mexique">Mexique</option>
+    		      		</optgroup>
+
+    		      		<optgroup label="Amérique du Sud">
+    		          		<option value="Argentine">Argentine</option>
+    		          		<option value="Brésil">Brésil</option>
+    		      		</optgroup>
+
+    		      		<optgroup label="Asie">
+    		          		<option value="Chine">Chine</option>
+    		           		<option value="Japon">Japon</option>
+    		           		<option value="Inde">Inde</option>
+    		       		</optgroup>	
+					</select>  
+				</fieldset>
+
+				<fieldset>
+					<legend><span class="number">2</span> Votre demande</legend>
+					<textarea name="field3" placeholder="Tapez votre message ici"></textarea>
+				</fieldset>
+
+				<input type="submit" value="Envoyer"/>
+				<input type="reset" name="reset" value="Rénitialiser">
+			</form>
+
+    		<footer>
+				<div id="logo_footer">
+					<img src="images/logo.jpg" alt="Logo"/>
+				</div>
+
+				<div id="layout">
+					<img src="images/layout.png" alt="layout" width="35%">
+				</div>
+
+				<div id="extra">
+					tel: (+33) 6 66 81 79 85 <br>
+					e-mail: <a href="saona.gtns@outlook.com">saona.gtns@outlook.com</a>
+					<p>
+						<a href="https://www.facebook.com/saa.na.3386" target="_blank">
+							<img src="images/facebook.png"  width="15%" alt="fb"></a>
+						<a href="https://www.instagram.com/saona_g/" target="_blank">
+							<img src="images/instagram.png"  width="15%" alt="insta">
+						</a>
+					</p>
+				</div>
+
+				<div id="end">
+					Créateur du site:<br>
+					Saona<br>
+					Réalisé dans le cadre<br>d'un projet scolaire
+				</div>
+			</footer>
+        </div>
+	</body>
+
+</html>

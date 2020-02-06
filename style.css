@@ -1,0 +1,553 @@
+/*IMPORTATION DE LA POLICE "VENDETTA"*/
+
+@font-face{
+    font-family: 'Vendetta';
+    src: url('Vendetta.ttf') format ('truetype');
+}
+
+/* CSS DE LA HOME PAGE */
+
+body
+{
+   background: url('images/webbackground.jpg') no-repeat center center fixed;
+   font-family: Vendetta, Arial, sans-serif;
+   color: #181818;
+}
+
+#bloc_page
+{
+   width: 900px;
+   margin: auto; /* permet de tout centrer l'intégralité du site*/
+}
+
+nav a
+{
+   font-family: Vendetta, Arial, sans-serif;
+   font-weight: bold;
+}
+
+
+header
+{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+#logo
+{
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+}
+
+#logo img
+{
+   width: 147px;
+   height: 159px;
+}
+
+header h1
+{
+   font-family: Vendetta, Arial, sans-serif;
+   font-size: 2.5em;
+   font-weight: normal;
+   margin: 0 0 0 10px;
+}
+
+header h2
+{
+   font-family: Vendetta, Arial, sans-serif;
+   font-size: 1.1em;
+   margin-top: 0px;
+   font-weight: normal;
+}
+
+nav ul
+{
+   list-style-type: none;
+   display: flex;
+}
+
+nav li
+{
+   margin-right: 15px;
+}
+
+nav a
+{    
+   font-size: 1.3em;
+   color: #CA3C1F;
+   padding-bottom: 3px;
+   padding-left: 5px;
+   text-decoration: none;
+   border-left: 2px solid #1B2F69;
+}
+
+nav a:hover
+{
+   color: #1B2F69;
+   border-bottom: 3px solid #CA3C1F;
+   border-left: none;
+}
+
+
+/* Bannière */
+
+#banniere_image
+{
+   margin-top: 15px;
+   height: 200px;
+   border-radius: 5px;
+   background: url(images/banner.png) no-repeat;
+   position: relative;
+  
+   margin-bottom: 25px;
+}
+
+/* Corps */
+
+section
+{
+   display: flex;
+   margin-bottom: 20px;
+}
+
+article, aside
+{
+   text-align: justify;
+}
+
+article
+{
+   margin-right: 20px;
+   flex: 3;
+}
+.logo_article
+{
+   vertical-align: middle;
+   margin-right: 8px;
+}
+
+
+article p
+{
+   font-size: 0.8em;
+   box-shadow: 0px 2px 5px #1c1a19;
+   border-radius: 5px;
+}
+
+aside
+{
+   flex: 1.2;
+   position: relative;
+   background-color: #e67e22;
+   box-shadow: 0px 2px 5px #1c1a19;
+   border-radius: 5px;
+   color: white;
+   padding: 10px;
+   font-size: 0.8em;
+   font-family: Verdana;
+}
+
+#photo_cv
+{
+   text-align: center;
+}
+
+#photo_cv img
+{
+   background-color: #706b64;
+   box-shadow: 0px 2px 5px #1c1a19;
+   border-radius: 5px;
+   width: 149px;
+   height: 150px;
+}
+
+aside h1
+{   
+   display: flex;
+   justify-content: center;
+   font-size: 1.5em;
+}
+
+aside img
+{   
+   display: inline-flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   justify-content: center;
+}
+
+
+
+/* Footer */
+
+footer
+{
+  margin-top: 50px;
+  display: flex;
+  flex: 1.2;
+  background: #117acfa4;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+  color: white;
+  font-family: Verdana;
+  font-size: 30 px;
+}
+
+footer a
+{
+  color: white;
+}
+
+footer div.extra{
+   margin-top: 15px;
+}
+
+#logo_footer img
+{
+   margin-top: 13px;
+   margin-left: 10px;
+   width: 100px; 
+   height: 100px;
+}
+
+#layout
+{
+   height: 2px;
+   width: 10px;
+   margin-top: 30px;
+   margin-left: 20px;
+}
+
+#extra
+{
+   margin-top: 14px;
+   margin-left: 110px;
+   width: 35%;
+}
+
+#extra img
+{
+   margin-left: 20px;
+   width: 10%;
+}
+
+#end
+{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 15px;
+   width: 25%;
+   text-align: right
+}
+
+
+/* CSS de la page CV */
+
+.dl img
+{
+    height: 20px;
+    width: 20px;
+    margin-left: 110px;
+    margin-top: 80px;
+}
+
+.dl a
+{
+    text-decoration: none;
+    color: #1B2F69;
+    font-family: Tw Cen MT Condensed;
+    font-size: 20px;
+}
+
+.page
+{
+    width: 780px;
+    margin: auto;
+    font-size: 16px;
+    font-family: 'Source sans Pro', Calibri, Tahoma, sans-serif;
+    padding: 30px;
+    border: 1px solid #e67e22;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px black;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page .infophoto
+{
+    height: 250px;
+}
+
+.page .info
+{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.page .photo
+{
+    display: flex;
+    justify-content: flex-end;
+    height: 150px;
+    width: 330px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 8px;
+}
+
+.page .section{
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.page .gauche{
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.page .droite{
+    margin-left: 350px;
+    margin-top: 47px;
+}
+
+.page b{
+    font-size: 26px;
+}
+
+.page h2{
+    font-family: Vendetta;
+    font-size: 28px;
+    color: black;
+    text-transform: uppercase;
+    border-bottom: 5px solid #e67e22;
+}
+
+.page #namecv
+{
+    font-family: Vendetta;
+}
+
+.page .titre{
+    font-weight: bold;
+    font-size: 20px;
+    color: #e67e22;
+}
+
+.page #forma-gauche{
+    margin-top: 3px;
+}
+
+.page #forma-gauche2{
+    margin-top: 107px;
+}
+
+.page #forma-gaucheindp
+{
+    margin-top: 88px;
+}
+
+.page #exp-gauche0{
+    margin-top: 24px;
+}
+
+.page #exp-gauche1{
+    margin-top: 128px;
+}
+
+
+.page #exp-gauche2{
+    margin-top: 105px;
+}
+
+.page #exp-gauche3{
+    margin-top: 105px;
+}
+
+.page #fr{
+    margin-bottom: 22px;
+}
+
+.page #en{
+    margin-bottom: 27px;
+}
+.page #all{
+    margin-bottom: 25px;
+}
+
+.page #esp{
+    margin-bottom: 25px;
+}
+
+.page #kr{
+    margin-bottom: 28px;
+}
+
+
+
+.page #div1{
+    margin-top: 23px
+}
+
+.page #div2{
+    margin-top: 111px
+}
+
+.gauche {
+
+    margin-left: 40px;
+}
+
+.droite{
+    margin-right: 39px;
+}
+
+
+/* CSS DE LA PAGE CONTACT */
+
+form
+{   
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia;
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 20px;
+    padding: 20px;
+    
+}
+
+
+fieldset
+{
+    border: none;
+}
+
+
+legend 
+{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+
+label 
+{
+    display: block;
+    margin-bottom: 8px; 
+}
+
+#pays
+{
+    width: 130px;
+}
+
+#civilite
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nomprenom
+{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#prenom
+{
+    margin-left: 50px;
+}
+
+form #email
+{
+    width: 400px;
+}
+
+form #zipcode
+{
+    width: 100px;
+}
+
+input[type="text"], input[type="email"], textarea, select
+{
+    font-family: Georgia;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, select:focus
+{
+    background: #e67e22;
+    color: white;
+}
+
+select
+{
+    height:35px;
+}
+
+.number {
+    background: #e67e22;
+    color: white;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px 15px 15px 0px;
+}
+
+input[type="submit"]
+{
+    padding: 19px 39px 18px 39px;
+    color: white;
+    margin: auto;
+    background: #e67e22;
+    font-size: 18px;
+    text-align: center;
+
+    width: 100%;
+    border: 1px solid #AE3216;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+input[type="reset"]
+{
+    padding: 19px 39px 18px 39px;
+    color: white;
+    margin: auto;
+    background: #e67e22;
+    font-size: 18px;
+    text-align: center;
+
+    width: 50%;
+    border: 1px solid #AE3216;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover
+{
+    background: #AE3216;
+}
